@@ -88,7 +88,9 @@ def get_dummies_df(df, label_col):
     return df
 
 #def file_selector(folder_path='./raw_excel_file/'):
-def file_selector(folder_path='D:/python_project/5.FA_AI/raw_excel_file/'):
+#./resource/21_22_고품접수 TF_정리_LIST_FCM_KLK_220330_고객(HKMC공유 예정)_내용 수정_방향.xlsx
+#def file_selector(folder_path='D:/python_project/5.FA_AI/raw_excel_file/'):
+def file_selector(folder_path='./resource/'):
     
     filenames = os.listdir(folder_path)
     selected_filename = st.sidebar.selectbox('- Select an excel file', filenames)
