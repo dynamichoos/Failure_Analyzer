@@ -122,7 +122,7 @@ st.sidebar.header('1. Open file')
 
 #file_name = file_selector()
 #file_name = './resource/21_22_고품접수 TF_정리_LIST_FCM_KLK_220330_고객(HKMC공유 예정)_내용 수정_방향.xlsx'
-file_name = "https://github.com/dynamichoos/Failure_Analyzer/blob/main/resource/21_22_%EA%B3%A0%ED%92%88%EC%A0%91%EC%88%98%20TF_%EC%A0%95%EB%A6%AC_LIST_FCM_KLK_220330_%EA%B3%A0%EA%B0%9D(HKMC%EA%B3%B5%EC%9C%A0%20%EC%98%88%EC%A0%95)_%EB%82%B4%EC%9A%A9%20%EC%88%98%EC%A0%95_%EB%B0%A9%ED%96%A5.xlsx"
+file_name = "https://github.com/dynamichoos/Failure_Analyzer/blob/main/resource/FA_LIST.xlsx"
 st.write('- You selected the file: `%s`' % file_name)
 
 ## Set sheet_name ##
