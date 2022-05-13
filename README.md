@@ -3,7 +3,7 @@ Data_engineering_from_Streamlit
 
 ## Streamlit App: Failure Analyzer
 
-[Try it out!](https://share.streamlit.io/dynamichoos/Failure_Analyzer/main/streamlit_test.py)
+[Try it out!](https://share.streamlit.io/dynamichoos/Failure_Analyzer/main/streamlit_app.py)
 
 > Execute Result_analyzer!
 
@@ -30,5 +30,5 @@ pip install -r requirements.txt
 ### 2. Run app
 
 ```bash
-streamlit run streamlit_test.py
+streamlit run streamlit_app.py
 ```
