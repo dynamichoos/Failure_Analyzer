@@ -120,9 +120,9 @@ st.set_page_config(page_title = title_ ,
 
 st.sidebar.header('1. Open file')
 
-#file_name = file_selector()
+file_name = file_selector()
 #file_name = './resource/21_22_고품접수 TF_정리_LIST_FCM_KLK_220330_고객(HKMC공유 예정)_내용 수정_방향.xlsx'
-file_name = "https://github.com/dynamichoos/Failure_Analyzer/blob/main/resource/FA_LIST.xlsx"
+#file_name = "https://github.com/dynamichoos/Failure_Analyzer/blob/main/resource/FA_LIST.xlsx"
 st.write('- You selected the file: `%s`' % file_name)
 
 ## Set sheet_name ##
