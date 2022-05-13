@@ -1,4 +1,4 @@
-from turtle import window_width
+#from turtle import window_width
 from sklearn.datasets import *
 from sklearn import preprocessing, tree
 from dtreeviz.trees import dtreeviz
@@ -9,7 +9,7 @@ import plotly.express as px
 import streamlit as st
 import os
 
-from wcwidth import wcswidth
+#from wcwidth import wcswidth
 #import conversion_excel
 
 
