@@ -1,3 +1,5 @@
+pip == 22.1
+
 altair==4.2.0
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
@@ -107,3 +109,5 @@ webencodings==0.5.1
 widgetsnbextension==3.5.2
 wincertstore==0.2
 zipp==3.7.0
+
+pip == 22.1
