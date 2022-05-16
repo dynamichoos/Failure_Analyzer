@@ -19,7 +19,7 @@ import subprocess
 def pip_install(package):
     subprocess.check_call(["sudo", sys.executable, "-m", "pip", "install", package])
     
-pip_install(python-pydot python-pydot-ng graphviz)
+pip_install(python-pydot)
 
 #from wcwidth import wcswidth
 #import conversion_excel
