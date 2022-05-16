@@ -420,7 +420,7 @@ check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split('
 print('Here!!!!')
 print(check_all_path)
 print('Here!! base path!!')
-print(os.path.basename(path))
+print(os.path.basename("PATH"))
 
 
 common_path = "/home/appuser/venv/lib/python3.7/site-packages/"
