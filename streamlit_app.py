@@ -419,9 +419,41 @@ def st_dtree(plot, height=None):
 
     components.html(dtree_html, height=height)
 
-st_dtree(viz,800)
+#dt_dtree(viz,800)
+
+###############################################
 
 
+from sklearn.datasets import make_moons
+from sklearn.tree import DecisionTreeClassifier
+from dtreeviz.trees import dtreeviz
+import streamlit as st
+import graphviz as graphviz
+import matplotlib.pyplot as plt
+import streamlit.components.v1 as components
+
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
+X, y = make_moons(n_samples=20, noise=0.25, random_state=3)
+
+treeclf = DecisionTreeClassifier(random_state=0)
+treeclf.fit(X, y)
+
+viz= dtreeviz(treeclf, X, y, target_name="Classes",
+
+    feature_names=["f0", "f1"], class_names=["c0", "c1"])
+
+def st_dtree(plot, height=None):
+
+    dtree_html = f"<body>{viz.svg()}</body>"
+
+    components.html(dtree_html, height=height)
+
+st_dtree(dtreeviz(treeclf, X, y, target_name="Classes",feature_names=["f0", "f1"], class_names=["c0", "c1"]),800)
+
+###############################################
+
+'''
 mid_column = st.columns(1)
 svg_write(svg)
 
@@ -429,6 +461,7 @@ svg_write(svg)
 
 ## to save result
 viz.save("decision_tree_in_streamlit.svg")
+'''
 
 
 ## 7. 저장
