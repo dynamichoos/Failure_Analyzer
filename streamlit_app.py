@@ -418,11 +418,20 @@ import os
 
 
 print('Here!! base path!!')
-find / -name dot.exe
+
 
 common_path = "/home/appuser/venv/bin"
 dot_path = os.path.join(common_path, 'Library', 'bin', 'graphviz')
 os.environ["PATH"] += os.pathsep + dot_path
+
+
+common_path = "/home/appuser/venv/lib/python3.7/site-packages/"
+dot_path = os.path.join(common_path, 'graphviz')
+os.environ["PATH"] += os.pathsep + dot_path
+
+
+common_path = "/home/appuser/venv/lib/python3.7/site-packages/graphviz"
+os.environ["PATH"] += os.pathsep + common_path
 
 ###################################################################
 
