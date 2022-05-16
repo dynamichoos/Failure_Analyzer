@@ -431,7 +431,7 @@ os.environ["PATH"] += os.pathsep + dot_path
 viz=visualization_dtreeviz(df_selected,label_col)
 #svg=viz.svg()
 
-st.image(viz._repr_svg_(), use_column_width=True)
+st.image(viz.repr_svg_(), use_column_width=True)
 
 ###################################
 
