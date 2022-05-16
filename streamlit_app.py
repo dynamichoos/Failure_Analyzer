@@ -10,6 +10,8 @@ import plotly.express as px
 import streamlit as st
 import os
 
+import streamlit.components.v1 as components
+
 #from wcwidth import wcswidth
 #import conversion_excel
 
@@ -408,7 +410,16 @@ st.markdown('####')
 print(df_selected)
 
 viz=visualization_dtreeviz(df_selected,label_col)
-svg=viz.svg()
+#svg=viz.svg()
+
+
+def st_dtree(plot, height=None):
+    
+    dtree_html = f"<body>{viz.svg()}</body>"
+
+    components.html(dtree_html, height=height)
+
+st_dtree(viz,800)
 
 
 mid_column = st.columns(1)
