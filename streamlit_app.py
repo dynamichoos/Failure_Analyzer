@@ -414,7 +414,8 @@ print(df_selected)
 
 import os
 #common_path = os.path.commonpath([path for path in os.environ["PATH"].split(';') if 'Anaconda' in path])
-check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';') if 'graphviz' in path])
+#check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';')] if 'graphviz' in path])
+check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';')])
 
 print('Here!!!!')
 print(check_all_path)
