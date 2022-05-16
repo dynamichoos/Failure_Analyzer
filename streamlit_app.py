@@ -416,6 +416,9 @@ import os
 #check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';')] if 'graphviz' in path])
 check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';')])
 
+print('Here!!!!1')
+print(os.environ["PATH"])
+
 print('Here!!!!')
 print(check_all_path)
 print('Here!! base path!!')
