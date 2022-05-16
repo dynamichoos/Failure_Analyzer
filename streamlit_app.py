@@ -3,6 +3,7 @@ from sklearn.datasets import *
 from sklearn import preprocessing, tree
 from dtreeviz.trees import dtreeviz
 import base64
+import graphviz as graphviz
 
 import pandas as pd
 import plotly.express as px
