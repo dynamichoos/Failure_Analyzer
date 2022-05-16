@@ -414,6 +414,8 @@ print(df_selected)
 
 import os
 #common_path = os.path.commonpath([path for path in os.environ["PATH"].split(';') if 'Anaconda' in path])
+check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';') if 'graphviz' in path])
+
 common_path = "/home/appuser/venv/lib/python3.7/site-packages/"
 dot_path = os.path.join(common_path, 'Library', 'bin', 'graphviz')
 os.environ["PATH"] += os.pathsep + dot_path
