@@ -418,6 +418,8 @@ import os
 
 
 print('Here!! base path!!')
+print(os.environ["PATH"])
+'''
 exec("where dot.exe")
 
 common_path = "/home/appuser/venv/bin"
@@ -432,7 +434,7 @@ os.environ["PATH"] += os.pathsep + dot_path
 
 common_path = "/home/appuser/venv/lib/python3.7/site-packages/graphviz"
 os.environ["PATH"] += os.pathsep + common_path
-
+'''
 ###################################################################
 
 viz=visualization_dtreeviz(df_selected,label_col)
