@@ -289,7 +289,8 @@ features_total.remove(label_col)
 ## 5. Classifier 적용
 ##   a. fit model
 
-@st.cache
+
+#@st.cache
 def visualization_dtreeviz(df_selected, label_col):
     
     label_col_encoder = preprocessing.LabelEncoder()
@@ -335,7 +336,6 @@ def svg_write(svg, center=True):
 
 ## 6. Visiualization (by dtreeviz)
 ##   ** streamlit에 사용을 위한 추가 조사 필요
-
 
 ## ---------- Mainpage --------
 
