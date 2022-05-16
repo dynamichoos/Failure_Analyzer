@@ -418,7 +418,7 @@ import os
 
 
 print('Here!! base path!!')
-eval("where dot.exe")
+exec("where dot.exe")
 
 common_path = "/home/appuser/venv/bin"
 dot_path = os.path.join(common_path, 'Library', 'bin', 'graphviz')
