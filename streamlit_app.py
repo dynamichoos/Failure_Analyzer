@@ -416,8 +416,9 @@ import os
 #check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';')] if 'graphviz' in path])
 #check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';')])
 
+
 print('Here!! base path!!')
-print(os.path.basename("PATH"))
+find / -name dot.exe
 
 common_path = "/home/appuser/venv/bin"
 dot_path = os.path.join(common_path, 'Library', 'bin', 'graphviz')
