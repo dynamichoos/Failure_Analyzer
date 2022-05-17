@@ -26,6 +26,7 @@ def pip_install(package):
 
 result = subprocess.check_output('find -name "dot.exe"', shell=True)
 #find -name "dot.exe"
+print('Here - check location')
 print(result)
 
 #pip_install('python-pydot python-pydot-ng graphviz')
