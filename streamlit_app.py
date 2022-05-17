@@ -22,6 +22,9 @@ print('here - pip upgrade')
 subprocess.call(["find",'/','-name','"dot.exe"'])
 print('here - find dot.exe')
 
+subprocess.call(["find",'/','-name','"graphviz"'])
+print('here - find graphviz')
+
 ### source: https://github.com/Sven-Bo/streamlit-sales-dashboard ###
 ### emojis : https:/www.webfx.com/tools/emoji-cheat-sheet/
 
