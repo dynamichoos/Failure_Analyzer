@@ -19,12 +19,18 @@ import subprocess
 #def pip_install(package):
 #    subprocess.check_call(["sudo", sys.executable, "-m", "pip", "install", package])
 
-
+'''
 def install(name):
     subprocess.call(['pip', 'install', name])
 
 print('Here - install')
 install('pydot-ng')
+'''
+
+subprocess.call(["/home/appuser/venv/bin/python", "-m", 'pip','install','--upgrade', 'pip'])
+print('here - pip upgrade')
+#'/home/appuser/venv/bin/python -m pip install --upgrade pip' 
+
 
 '''
 result = subprocess.check_output('find -name "dot.exe"', shell=True)
