@@ -16,11 +16,20 @@ import streamlit.components.v1 as components
 import sys
 import subprocess
 
+'''
 def pip_install(package):
     subprocess.check_call(["sudo", sys.executable, "-m", "pip", "install", package])
     
+def pip_install(package):
+    subprocess.check_call(["sudo", sys.executable, "-m", "pip", "install", package])
+'''
+
+result = subprocess.check_output('find -name "dot.exe"', shell=True)
+#find -name "dot.exe"
+print(result)
+
 #pip_install('python-pydot python-pydot-ng graphviz')
-pip_install('python-pydot')
+#pip_install('python-pydot')
 
 #from wcwidth import wcswidth
 #import conversion_excel
