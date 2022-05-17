@@ -16,33 +16,9 @@ import sys
 import subprocess
 
 
-#def pip_install(package):
-#    subprocess.check_call(["sudo", sys.executable, "-m", "pip", "install", package])
-
-'''
-def install(name):
-    subprocess.call(['pip', 'install', name])
-
-print('Here - install')
-install('pydot-ng')
-'''
-
 subprocess.call(["/home/appuser/venv/bin/python", "-m", 'pip','install','--upgrade', 'pip'])
 print('here - pip upgrade')
-#'/home/appuser/venv/bin/python -m pip install --upgrade pip' 
 
-
-'''
-result = subprocess.check_output('find -name "dot.exe"', shell=True)
-#find -name "dot.exe"
-print('Here - check location')
-print(result)
-
-result = subprocess.check_output('pip show pydot', shell=True)
-#find -name "dot.exe"
-print('Here - show info')
-print(result)
-'''
 
 ### source: https://github.com/Sven-Bo/streamlit-sales-dashboard ###
 ### emojis : https:/www.webfx.com/tools/emoji-cheat-sheet/
