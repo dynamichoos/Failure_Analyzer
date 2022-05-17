@@ -19,11 +19,13 @@ import subprocess
 subprocess.call(["/home/appuser/venv/bin/python", "-m", 'pip','install','--upgrade', 'pip'])
 print('here - pip upgrade')
 
-subprocess.call(["find",'/','-name','"dot.exe"'])
+result = subprocess.call(["find",'/','-name','"dot.exe"'], shell=True)
 print('here - find dot.exe')
+print(result)
 
-subprocess.call(["find",'/','-name','"graphviz"'])
+result2 = subprocess.call(["find",'/','-name','"graphviz"'], shell=True)
 print('here - find graphviz')
+print(result2)
 
 ### source: https://github.com/Sven-Bo/streamlit-sales-dashboard ###
 ### emojis : https:/www.webfx.com/tools/emoji-cheat-sheet/
