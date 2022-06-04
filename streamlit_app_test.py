@@ -16,3 +16,7 @@ summary_type = st.selectbox("Type of summary:", ["sum", "any"])
 metadata = load_metadata()
 summary = create_summary(metadata, summary_type)
 st.write('## Metadata', metadata, '## Summary', summary)
+
+# # test for GIT env in VS code
+# ? 오호라 이건 다 다르게 되는 군
+# ! 테스트하는 중
