@@ -11,7 +11,7 @@ Based on the streamlit framework, visualization and tree analysis is implimented
 
 ## Requirements
 
-The app is developed in Python 3.7x
+The app is developed in Python 3.8x
 
 ```bash
 pip install -r requirements.txt
@@ -22,10 +22,6 @@ pip install -r requirements.txt
 ### 1. Download stock information data
 
 - Collecting Failure Analysis list.
-- The following script will store the listed stock information into `./resource` directory (TBD)
-	```bash
-	python prepare_data.py
-	```
 
 ### 2. Run app
 
