@@ -19,6 +19,20 @@ import os
 #import conversion_excel
 
 
+import sys
+import subprocess
+
+subprocess.call(["/home/appuser/venv/bin/python", "-m", 'pip','install','--upgrade', 'pip'])
+print('here - pip upgrade')
+
+result = subprocess.call(["find",'/','-name','"dot.exe"'], shell=True)
+print('here - find dot.exe')
+print(result)
+
+result2 = subprocess.call(["find",'/','-name','"graphviz"'], shell=True)
+print('here - find graphviz')
+print(result2)
+
 ### source: https://github.com/Sven-Bo/streamlit-sales-dashboard ###
 ### emojis : https:/www.webfx.com/tools/emoji-cheat-sheet/
 ## UN data : http://data.un.org/Data.aspx?d=FAO&f=itemCode%3a800
@@ -105,7 +119,8 @@ def get_dummies_df(df, label_col):
     return df
 
 #def file_selector(folder_path='./raw_excel_file/'):
-def file_selector(folder_path='D:/python_project/5.FA_AI/raw_excel_file/'):
+#def file_selector(folder_path='D:/python_project/5.FA_AI/raw_excel_file/'):
+def file_selector(folder_path='./resource/'):
     
     filenames = os.listdir(folder_path)
     selected_filename = st.sidebar.selectbox('- Select an excel file', filenames)
@@ -459,6 +474,56 @@ st.markdown('####')
 
 print(df_selected)
 
+
+import os
+#common_path = os.path.commonpath([path for path in os.environ["PATH"].split(';') if 'Anaconda' in path])
+#check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';')] if 'graphviz' in path])
+#check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';')])
+
+
+print('Here!! base path!!')
+print(os.environ["PATH"])
+
+
+'''
+common_path = "/home/appuser/venv/bin"
+dot_path = os.path.join(common_path, 'Library', 'bin', 'graphviz')
+os.environ["PATH"] += os.pathsep + dot_path
+common_path = "/home/appuser/venv/lib/python3.7/site-packages/"
+dot_path = os.path.join(common_path, 'graphviz')
+os.environ["PATH"] += os.pathsep + dot_path
+'''
+
+common_path = "/home/appuser/venv/lib/python3.8/site-packages/graphviz/"
+os.environ["PATH"] += os.pathsep + common_path
+
+common_path = "/home/appuser/venv/lib/python3.8/site-packages/graphviz"
+os.environ["PATH"] += os.pathsep + common_path
+
+common_path = "/home/appuser/venv/lib/python3.8/site-packages/streamlit"
+os.environ["PATH"] += os.pathsep + common_path
+
+common_path = "/home/appuser/venv/lib/python3.8/site-packages/dtreeviz"
+os.environ["PATH"] += os.pathsep + common_path
+
+common_path = "/usr/local/lib/graphviz"
+os.environ["PATH"] += os.pathsep + common_path
+
+common_path = "usr/bin"
+dot_path = os.path.join(common_path, 'Library', 'bin', 'graphviz')
+os.environ["PATH"] += os.pathsep + dot_path
+
+common_path = "usr/local/bin"
+dot_path = os.path.join(common_path, 'Library', 'bin', 'graphviz')
+os.environ["PATH"] += os.pathsep + dot_path
+
+common_path = "usr/bin"
+dot_path = os.path.join(common_path, 'graphviz')
+os.environ["PATH"] += os.pathsep + dot_path
+
+common_path = "usr/local/bin"
+dot_path = os.path.join(common_path,'graphviz')
+os.environ["PATH"] += os.pathsep + dot_path
 viz=visualization_dtreeviz(df_selected,label_col)
 svg=viz.svg()
 
