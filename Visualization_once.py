@@ -479,7 +479,7 @@ import os
 print('Here!! base path!!')
 print(os.environ["PATH"])
 
-print('the Fault map from Graphviz is only locally working!')
+st.write('the Fault map from Graphviz is only locally working!')
 
 #viz=visualization_dtreeviz(df_selected,label_col)
 #svg=viz.svg()
