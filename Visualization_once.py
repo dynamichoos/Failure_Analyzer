@@ -494,6 +494,7 @@ dot_path = os.path.join(common_path, 'graphviz')
 os.environ["PATH"] += os.pathsep + dot_path
 '''
 
+'''
 common_path = "/home/appuser/venv/lib/python3.8/site-packages/graphviz/"
 os.environ["PATH"] += os.pathsep + common_path
 
@@ -524,6 +525,8 @@ os.environ["PATH"] += os.pathsep + dot_path
 common_path = "usr/local/bin"
 dot_path = os.path.join(common_path,'graphviz')
 os.environ["PATH"] += os.pathsep + dot_path
+'''
+
 viz=visualization_dtreeviz(df_selected,label_col)
 svg=viz.svg()
 
