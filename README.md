@@ -3,8 +3,8 @@ Data_engineering_from_Streamlit
 
 ## Streamlit App: Failure Analyzer
 
-[Try it out!](https://share.streamlit.io/dynamichoos/Failure_Analyzer/main/streamlit_app.py)
-
+[Try it out!](https://dynamichoos-failure-analyzer-visualization-once-qdg0gu.streamlitapp.com/)
+#https://share.streamlit.io/dynamichoos/Failure_Analyzer/main/streamlit_app.py
 > Execute Result_analyzer!
 
 Based on the streamlit framework, visualization and tree analysis is implimented.
