@@ -525,7 +525,7 @@ os.environ["PATH"] += os.pathsep + dot_path
 common_path = "usr/local/bin"
 dot_path = os.path.join(common_path,'graphviz')
 os.environ["PATH"] += os.pathsep + dot_path
-'''
+
 
 viz=visualization_dtreeviz(df_selected,label_col)
 svg=viz.svg()
@@ -534,6 +534,7 @@ svg_write(svg)
 
 ## to save result
 viz.save("decision_tree_in_streamlit.svg")
+'''
 
 ## 7. 저장
 ##   a. SVG 저장
