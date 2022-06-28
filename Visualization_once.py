@@ -444,7 +444,6 @@ st.write('<style>div.st-bf{flex-direction:column;} div.st-ag{font-weight:bold;pa
 selected_item = st.radio("Select the feature", sorted(['Defect2','ITEM','차종','Simulator\nDTC']),index=1,)
 selected_label = st.radio("Select the result", sorted(['Defect2','ITEM','차종','Simulator\nDTC']),index=0,)
 
-
 print(f'selected item : {selected_item}')
 print(f'selected_label : {selected_label}')
 
@@ -480,6 +479,7 @@ import os
 print('Here!! base path!!')
 print(os.environ["PATH"])
 
+the Fault map from Graphviz is only locally working 
 
 #viz=visualization_dtreeviz(df_selected,label_col)
 #svg=viz.svg()
