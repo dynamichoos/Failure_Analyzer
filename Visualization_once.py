@@ -476,65 +476,18 @@ print(df_selected)
 
 
 import os
-#common_path = os.path.commonpath([path for path in os.environ["PATH"].split(';') if 'Anaconda' in path])
-#check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';')] if 'graphviz' in path])
-#check_all_path = os.path.commonpath([path for path in os.environ["PATH"].split(';')])
-
 
 print('Here!! base path!!')
 print(os.environ["PATH"])
 
 
-'''
-common_path = "/home/appuser/venv/bin"
-dot_path = os.path.join(common_path, 'Library', 'bin', 'graphviz')
-os.environ["PATH"] += os.pathsep + dot_path
-common_path = "/home/appuser/venv/lib/python3.7/site-packages/"
-dot_path = os.path.join(common_path, 'graphviz')
-os.environ["PATH"] += os.pathsep + dot_path
-'''
+#viz=visualization_dtreeviz(df_selected,label_col)
+#svg=viz.svg()
+#svg_write(svg)
 
-'''
-common_path = "/home/appuser/venv/lib/python3.8/site-packages/graphviz/"
-os.environ["PATH"] += os.pathsep + common_path
+#to save result
+#viz.save("decision_tree_in_streamlit.svg")
 
-common_path = "/home/appuser/venv/lib/python3.8/site-packages/graphviz"
-os.environ["PATH"] += os.pathsep + common_path
-
-common_path = "/home/appuser/venv/lib/python3.8/site-packages/streamlit"
-os.environ["PATH"] += os.pathsep + common_path
-
-common_path = "/home/appuser/venv/lib/python3.8/site-packages/dtreeviz"
-os.environ["PATH"] += os.pathsep + common_path
-
-common_path = "/usr/local/lib/graphviz"
-os.environ["PATH"] += os.pathsep + common_path
-
-common_path = "usr/bin"
-dot_path = os.path.join(common_path, 'Library', 'bin', 'graphviz')
-os.environ["PATH"] += os.pathsep + dot_path
-
-common_path = "usr/local/bin"
-dot_path = os.path.join(common_path, 'Library', 'bin', 'graphviz')
-os.environ["PATH"] += os.pathsep + dot_path
-
-common_path = "usr/bin"
-dot_path = os.path.join(common_path, 'graphviz')
-os.environ["PATH"] += os.pathsep + dot_path
-
-common_path = "usr/local/bin"
-dot_path = os.path.join(common_path,'graphviz')
-os.environ["PATH"] += os.pathsep + dot_path
-
-
-viz=visualization_dtreeviz(df_selected,label_col)
-svg=viz.svg()
-
-svg_write(svg)
-
-## to save result
-viz.save("decision_tree_in_streamlit.svg")
-'''
 
 ## 7. 저장
 ##   a. SVG 저장
